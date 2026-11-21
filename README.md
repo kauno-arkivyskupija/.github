@@ -56,3 +56,10 @@ It counts tagged builds, not the untagged child manifests.
   GitHub Free.
 
 Run the workflow manually with `dry_run: true` before relying on the schedule.
+
+## Workflow template
+
+`workflow-templates/ghcr-cleanup.yml` is offered under **Actions → New workflow**
+in every repository of the organization. It calls the reusable workflow with
+`package-name: ${{ github.event.repository.name }}`, so it works for repositories
+whose container package has the same name as the repository.

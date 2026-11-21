@@ -1,0 +1,6 @@
+{
+	"name": "GHCR cleanup",
+	"description": "Delete old container image versions from GHCR, keeping the newest builds.",
+	"iconName": "package",
+	"categories": ["Deployment", "Automation"]
+}
